@@ -38,3 +38,8 @@ server:
   error:
 
     include-message: always
+eureka:
+  instance:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
