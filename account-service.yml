@@ -6,7 +6,7 @@ spring:
 
     password: root
 
-    url: jdbc:mysql://localhost:3306/many
+    url: jdbc:mysql://localhost:3306/account
 
     hikari:
 
@@ -33,7 +33,7 @@ spring:
 
 server:
 
-  port: 9090
+  port: 9000
 
   error:
 
