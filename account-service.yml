@@ -33,7 +33,7 @@ spring:
 
 server:
 
-  port: 0
+  port: 9000
 
   error:
 
