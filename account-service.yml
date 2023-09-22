@@ -46,11 +46,7 @@ eureka:
 customProperty:
    test: Prema@1979
 management:
-
   endpoints:
-
     web:
-
       exposure:
-
         include: refresh
