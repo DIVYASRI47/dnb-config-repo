@@ -44,4 +44,4 @@ eureka:
       serviceUrl:
         defaultZone: http://localhost:8761/eureka/
 customProperty:
-   test: Srinivas@1968
+   test: Prema@1979
