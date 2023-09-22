@@ -2,7 +2,7 @@ spring:
 
   datasource:
 
-    username: root
+    username: newroot1
 
     password: root
 
