@@ -51,5 +51,3 @@ management:
     web:
       exposure:
         include: refresh, health
-api:
-  customer: http://localhost:9001/api/customer
