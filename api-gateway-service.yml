@@ -1,8 +1,6 @@
 spring:
   application:
-    name: api-gateway-service
-  config:
-    import: optional:configserver:http://localhost:8888
+      name: api-gateway-service
   cloud:
     gateway:
       routes:
@@ -13,23 +11,19 @@ spring:
         - id: CUSTOMER-SERVICE
           uri: lb://CUSTOMER-SERVICE
           predicates:
-            - Path=/api/customer/**
-
+            - Path=/api/customer/** 
 server:
-  port: 9191
-
- 
-
+   port: 9191
+   error:
+    include-message: always
 eureka:
   instance:
-    client:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
+  client:
       serviceUrl:
-        defaultZone: http://localhost:8761/eureka
-
- 
-
+        defaultZone: http://localhost:8761/eureka/ 
 management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: refresh,health
