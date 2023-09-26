@@ -1,0 +1,32 @@
+spring:
+  datasource:
+      username: newroot1
+      password: root
+      url: jdbc:mysql://localhost:3306/education
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+server:
+  port: 0
+  error:
+    include-message: always
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/ 
+customProperty:
+  test: SAvithA
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
