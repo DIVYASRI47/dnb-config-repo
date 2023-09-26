@@ -29,6 +29,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh, health
+        include: "*"
 api:
   customer: http://CUSTOMER-SERVICE/customer
