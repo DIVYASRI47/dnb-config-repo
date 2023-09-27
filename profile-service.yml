@@ -2,7 +2,7 @@ spring:
   datasource:
       username: newroot1
       password: root
-      url: jdbc:mysql://localhost:3306/profile
+      url: jdbc:mysql://${DB_HOST:localhost}:3306/userdb?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=India
   jpa:
     hibernate:
       ddl-auto: update
