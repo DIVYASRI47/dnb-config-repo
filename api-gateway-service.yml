@@ -12,6 +12,10 @@ spring:
           uri: lb://CUSTOMER-SERVICE
           predicates:
             - Path=/customer/** 
+        -id: AUTH-SERVICE
+         uri: lb://AUTH-SERVICE
+         predicates:
+            -Path=/auth/**
 server:
    port: 9191
    error:
