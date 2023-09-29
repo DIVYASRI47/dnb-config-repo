@@ -6,7 +6,7 @@ spring:
 
     password: root
 
-    url: jdbc:mysql://${DB_HOST:localhost}:3306/customer?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=India
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/customer?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
 
     hikari:
 
