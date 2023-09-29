@@ -18,8 +18,8 @@ spring:
             - Path=/auth/** 
 jwt:
   secret: mySecretKey
-  expireMs: 1200
-  refrEshexpireMs: 1200
+  expireMs: 120000
+  refrEshexpireMs: 120000
 server:
    port: 9191
    error:
