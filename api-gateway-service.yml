@@ -16,6 +16,10 @@ spring:
           uri: lb://AUTH-SERVICE
           predicates:
             - Path=/api/auth/** 
+        - id: PROFILE-SERVICE
+          uri: lb://PROFILE-SERVICE
+          predicates:
+            - Path=/api/profile/** 
 jwt:
   secret: mySecretKey
   expireMs: 120000
