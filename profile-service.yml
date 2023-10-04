@@ -31,4 +31,4 @@ management:
       exposure:
         include: "*"
 api:
-  profile: http://PROFILE-SERVICE/api/profile
+  auth: http://AUTH-SERVICE/api/auth/profile
