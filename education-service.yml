@@ -31,4 +31,4 @@ management:
       exposure:
         include: "*"
 api:
-  customer: http://EDUCATION-SERVICE/education
+  education: http://EDUCATION-SERVICE/education
