@@ -31,4 +31,4 @@ management:
       exposure:
         include: "*"
 api:
-  education: http://EDUCATION-SERVICE/education
+  profile: http://PROFILE-SERVICE/api/profile
