@@ -32,3 +32,5 @@ management:
         include: "*"
 api:
   auth: http://AUTH-SERVICE/api/profile
+  auth1: http://AUTH-SERVICE/api/user
+  eduucation: http://EDUCATION-SERVICE/api/education
